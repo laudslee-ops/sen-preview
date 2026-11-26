@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2028 대입전형시행계획 요약 자료 · 쎈진학 PreView</title>
+  <link rel="stylesheet" href="viewer.css">
+  <script defer src="document.js"></script>
+  <script defer src="viewer.js"></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="쪽 이동">
+      <a href="#page-1">첫 페이지 · 지도</a>
+      <button type="button" id="prev">이전 쪽</button>
+      <form id="page-form">
+        <input id="page-number" type="number" min="1" value="1" required aria-label="쪽 번호">
+        <span id="page-count"></span>
+      </form>
+      <button type="button" id="next">다음 쪽</button>
+    </nav>
+  </header>
+  <main>
+    <div id="page" aria-label="문서 페이지" aria-busy="true">
+      <p id="status" role="status">문서를 여는 중입니다.</p>
+      <div id="artwork"></div>
+      <div id="links" aria-label="문서 내부 링크"></div>
+    </div>
+  </main>
+  <noscript>문서를 보려면 브라우저에서 자바스크립트를 켜 주세요.</noscript>
+</body>
+</html>
